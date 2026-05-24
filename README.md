@@ -4,7 +4,7 @@ A macOS Menu Bar application that monitors real-time internet connectivity when 
 
 ---
 
-## 📖 Background
+## Background
 
 By default, macOS prioritizes the Ethernet connection. However, if the Ethernet interface loses its internet connection but remains physically connected to a router/switch, macOS does not automatically switch traffic over to Wi-Fi. 
 
@@ -16,7 +16,7 @@ By default, macOS prioritizes the Ethernet connection. However, if the Ethernet 
 
 ---
 
-## 🛠️ Features
+## Features
 
 * **Sleek, Premium UI:** Programmatically draws an elegant, anti-aliased 7x7 dot (20% smaller than standard emoji dots) directly onto a custom `NSImage` to perfectly match the minimalist aesthetic of the native macOS menu bar.
 * **Smart Localization:** Automatically detects the macOS system language on boot and translates the interface. Supports: **Portuguese, English, Spanish, French, and German** with an English fallback.
@@ -34,7 +34,7 @@ By default, macOS prioritizes the Ethernet connection. However, if the Ethernet 
 
 ---
 
-## 🚀 Installation & Build
+## Installation & Build
 
 ### 1. Install Dependencies
 Ensure you have the required Python packages installed:
@@ -62,7 +62,7 @@ osacompile -o CableChecker.app -e 'do shell script "/usr/bin/python3 \"/Users/dy
 
 ---
 
-## ⚙️ Administrative Privileges (Sudoers)
+## Administrative Privileges (Sudoers)
 
 The `networksetup -ordernetworkservices` command used to dynamically prioritize interfaces usually requires administrative privileges. 
 
@@ -80,7 +80,7 @@ To prevent macOS from prompting you for your administrator password every time i
 
 ---
 
-## 🔄 Auto-Start on Boot
+## Auto-Start on Boot
 
 To run Cable Checker automatically when you start your Mac:
 1. Open **System Settings** > **General** > **Login Items** (Itens de Início).
