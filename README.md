@@ -26,7 +26,7 @@ By default, macOS prioritizes the Ethernet connection. However, if the Ethernet 
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 * macOS 10.15+ (Big Sur, Monterey, Ventura, Sonoma, Sequoia)
 * Python 3.9+
@@ -54,7 +54,7 @@ To bypass Gatekeeper and `py2app` framework distribution errors on modern macOS,
 
 ```bash
 # Compile
-osacompile -o CableChecker.app -e 'do shell script "/usr/bin/python3 \"/Users/dylanmac/.cable_checker_app/cable_checker.py\""'
+osacompile -o CableChecker.app -e 'do shell script "/usr/bin/python3 \"/Users/"your_user"/.cable_checker_app/cable_checker.py\""'
 
 # Hide from Dock
 /usr/libexec/PlistBuddy -c "Add :LSUIElement bool true" CableChecker.app/Contents/Info.plist
@@ -89,6 +89,6 @@ To run Cable Checker automatically when you start your Mac:
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and free to use. Designed with 💚 for macOS power users.
